@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="One Piece Information Hub, where users can learn more about the beauty
+        of the One Piece, its author, its Characters, and more!">
+        <title>ONE PIECE Info Hub</title>
+
+        <!-- h1 -->
+        <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Hanalei+Fill&family=Holtwood+One+SC&family=Original+Surfer&display=swap" rel="stylesheet">
+        <!-- h2 -->
+        <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Original+Surfer&display=swap" rel="stylesheet">
+        <!-- p -->
+        <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Holtwood+One+SC&family=Original+Surfer&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="project.css">
+
+        <style>
+            #title{
+                background-image: url("img/onepiece_homepage.png");
+            }
+            .overlay {
+                position: absolute; /* makes text visible OVER the img */
+                background-color: rgba(0,0,0,0.6); /* makes a tint color */
+                color: #FFF; 
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                visibility: hidden;
+            }
+            .overlay_text{
+                font-size: 20px;
+            }
+            #about {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+
+            #luffy_smile {
+                margin: 0 10px 10px 10px;
+                height: auto; /* maintain aspect ratio */
+                position: relative; 
+                overflow: hidden; /* hides any part of img that doesn't fit in container */
+            }
+            #luffy_smile img {
+                width: 100%;
+                height: auto;
+            }
+            #luffy_smile:hover .overlay {
+                visibility: visible;
+            }
+
+            #characters {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+
+            #strawhats{
+                margin: 0 10px 10px 10px;
+                height: auto; /* maintain aspect ratio */
+                position: relative; 
+                overflow: hidden; 
+            }
+            #strawhats img{
+                width: 100%;
+                height: auto;
+            }
+            #strawhats:hover .overlay{
+                visibility: visible;
+            }
+            #law{
+                margin: 0 10px 10px 10px;
+                height: auto; /* maintain aspect ratio */
+                position: relative; 
+                overflow: hidden; 
+            }
+            #law img{
+                width: 100%;
+                height: auto;
+            }
+            #law:hover .overlay{
+                visibility: visible;
+            }
+        
+            #faq {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+            
+            #faq .button{
+                margin-bottom: 20px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="title">
+            <h1>ONE PIECE: Info Hub</h1>
+        </div>
+
+        <div id="navbar">
+            <ul id="top-menu">
+                <li>
+                    <a href="homepage.html">Home</a>
+                    <ul class="sub-menu">
+                        <li><a href="homepage.html#about">About</a></li>
+                        <li><a href="homepage.html#characters">Characters</a></li>
+                        <li><a href="homepage.html#faq">FAQ + Contact</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about.html">About the One Piece</a>
+                    <ul class="sub-menu">
+                        <li><a href="about.html#what">What is the One Piece?</a></li>
+                        <li><a href="about.html#who">Who is the Author?</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="characters.html">Characters</a>
+                    <ul class="sub-menu">
+                        <li><a href="characters.html#StrawHat">Straw Hats Crew</a></li>
+                        <li><a href="characters.html#admirals">Admirals</a></li>
+                        <li><a href="characters.html#others">Other Characters</a></li>
+                        <li><a href="characters.html#more">More</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="faq.html">FAQ + Contact</a>
+                    <ul class="sub-menu">
+                        <li><a href="faq.html#faq">FAQ</a></li>
+                        <li><a href="faq.html#contact">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    
+        <div id="about">
+            <h2>About the One Piece</h2>
+            <div id="luffy_smile">
+                <img src="img/monkey_luffy.png" alt="Monkey D. Luffy">
+                <div class="overlay">
+                    <p class="overlay_text"> One Piece is an epic manga and anime series about Monkey D. Luffy and his crew's adventurous
+                        quest to find the legendary treasure, One Piece, and become Pirate King.
+                    </p>
+                </div>
+            </div>
+            <a href="about.html" class="button"><p>For More info for <em><strong>'About the One Piece,'</strong></em> press here</p></a>
+        </div>
+        
+        <div id="characters">
+            <h2>Characters</h2>
+            <div id="strawhats">
+                <img src="img/strawhats.png" alt="Straw Hat Pirates">
+                <div class="overlay">
+                    <p class="overlay_text"> The Straw Hat Pirates are a diverse and dynamic crew of pirates led by Monkey D. Luffy. 
+                        Each member has a unique backstory, distinct personality, and specific dream they aim to achieve.
+                    </p>
+                </div>
+            </div>
+            <a href="characters.html" class="button"><p>For More info for <em><strong>'Characters'</strong></em> press here</p></a>
+        </div>
+
+        <div id="faq">
+            <h2>FAQ + CONTACT</h2>
+            <div id="law">
+                <img src="img/law_w:_strawhats.png" alt="Trafalgar Law with Straw Hats">
+                <div class="overlay">
+                    <p class="overlay_text"> If you want to learn more, have any questions, or want to follow my socials, go to FAQ + Contact
+                    </p>
+                </div>
+            </div>
+            <a href="faq.html" class="button"><p>For More info for <em><strong>'FAQ + Contact'</strong></em> press here</p></a>
+        </div>
+
+        <div id="footer">
+            <p> &copy; 2024 Daniel Li</p>
+        </div>
+
+    </body>
+</html>
+
+

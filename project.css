@@ -1,0 +1,141 @@
+#title{
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+
+    padding-top: 250px;
+    padding-bottom: 250px;
+    border-bottom: 2px solid black;
+} 
+h1{
+    font-family:"Hanalei Fill", system-ui;
+    font-size: 75px;
+    color:#ffffff;
+    text-shadow:0px 0px 20px #000;
+}
+p{
+    font-family: "Faulty Glyphic", sans-serif;
+    font-size: 15px;
+    padding-left: 5px;
+}
+h2{
+    font-family: "Original Surfer", sans-serif;
+    font-size: 30px;
+    background-color: #ffffff;
+    padding-top:20px;
+    padding-bottom: 20px;
+    text-align: center;
+
+}
+body{
+    margin: 0px;
+    padding-top: 40px;
+    background-image: url("img/background.png");
+    cursor: url("cursor/OP/Luffy-person.cur"), auto;
+}
+img { 
+    width: 100%; height: auto; 
+}
+
+
+#navbar ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    cursor: url("cursor/OP/Luffy-Horizontal.cur"), auto;
+}
+#top-menu ul {
+    position: absolute;
+    display: none;
+    padding: 5px;
+    cursor: url("cursor/OP/Luffy-Horizontal.cur"), auto;
+}
+#navbar li:hover > ul { /* when cursor hover over menu it displays the content */
+    display: block;
+    cursor: url("cursor/OP/Luffy-Horizontal.cur"), auto;
+}
+
+#navbar li {
+    background-color: rgb(44, 200, 200);
+    width: 245px;
+    cursor: url("cursor/OP/Luffy-Horizontal.cur"), auto;
+}
+#navbar li:hover {
+    background-color: gold;
+    cursor: url("cursor/OP/Luffy-Horizontal.cur"), auto;
+}
+#navbar a {
+    display: block;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    color: beige;
+    text-shadow: 0px 0px 20px #000;
+    text-decoration: none;
+    cursor: url("cursor/OP/Luffy-Horizontal.cur"), auto;
+}
+#navbar {
+    background-color: rgb(44, 200, 200);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    padding: 10px;
+    text-align: center;
+    cursor: url("cursor/OP/Luffy-Horizontal.cur"), auto; /* Apply custom cursor to entire navbar */
+}
+
+
+html{
+    scroll-behavior: smooth; 
+    /* nav bar scrolls smoothly down to desired section */
+} 
+
+#footer{
+    background-color: rgb(122, 122, 122); 
+    color: white;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 0.8em;
+    background-size: cover;
+}
+
+.link{
+    cursor: pointer;
+    padding: 2px;
+    text-decoration: none;
+    color:black;
+    background-color: grey;
+    cursor: url("cursor/OP/Luffy-Alternate.cur"), auto;
+}
+.link:hover{
+    opacity: 0.8;
+    cursor: url("cursor/OP/Luffy-Alternate.cur"), auto;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none; /* removes the underline that's used for links */
+    color: #fff;
+    background-color: #509ae8; /* Button color */
+    border: none;
+    cursor: url("cursor/OP/Luffy-Help.cur"), auto;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.button:hover {
+    background-color: #407bbf; /* Darker shade on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
+    cursor: url("cursor/OP/Luffy-Help.cur"), auto;
+}
+

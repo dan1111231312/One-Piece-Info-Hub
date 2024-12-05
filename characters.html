@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>One Piece Info Hub | Characters</title>
+        <meta name="description" content="One Piece Information Hub, are you interested in the different characters
+        in this amazing universe?">
+        
+        <!-- h1 -->
+        <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Hanalei+Fill&family=Holtwood+One+SC&family=Original+Surfer&display=swap" rel="stylesheet">
+        <!-- h2 -->
+        <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Original+Surfer&display=swap" rel="stylesheet">
+        <!-- p -->
+        <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Holtwood+One+SC&family=Original+Surfer&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="project.css">
+        <style>
+            #title {
+                background-image: url("img/strawhats.png");
+            }
+            h3{
+                color: red;
+                text-shadow:0px 0px #000;
+                text-align: center;
+                font-size: 30px;
+            }
+            .rect1 {
+                display: flex;
+                flex-direction: row;
+                height: 200px;
+                width: auto;
+                background-color: #CCC;
+                border: 1px solid black;    
+                margin: 5px;
+                overflow: hidden; /* hides any part of img that doesn't fit in container */
+                position: relative; 
+            }
+            #StrawHat, #admirals, #others{
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+            #strawhats1, #strawhats2, #strawhats3, 
+            #admirals1, #admirals2, #admirals3, 
+            #others1, #others2{
+                display: flex; /* This makes the images align in a row */
+                flex-wrap: nowrap; /* Prevents wrapping to the next line */
+                margin-left: 50px;
+                margin-right: 50px;
+                object-fit: cover;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .rect1 img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .rect1 p{
+                font-size: 16px;
+            }
+            .overlay {
+                position: absolute; /* makes text visible OVER the img */
+                background-color: rgba(0,0,0,0.6); /* makes a tint color */
+                color: #FFF; 
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                visibility: hidden;
+                }
+            .overlay_text{
+                font-size: 20px;
+            }
+
+            .rect1:hover .overlay{
+                visibility: visible;
+            }
+            #more-info {
+                    margin:10px 10px 0 10px;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    margin-left: 50px;
+                    margin-right: 50px;
+            }
+            .button{
+                padding-top: 20px;
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="title">
+            <h1>Characters in One Piece</h1>
+        </div>
+        <h3>! Warning: Spoilers Ahead !</h3>
+
+        <div id="navbar">
+            <ul id="top-menu">
+                <li>
+                    <a href="homepage.html">Home</a>
+                    <ul class="sub-menu">
+                        <li><a href="homepage.html#about">About</a></li>
+                        <li><a href="homepage.html#characters">Characters</a></li>
+                        <li><a href="homepage.html#faq">FAQ + Contact</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about.html">About the One Piece</a>
+                    <ul class="sub-menu">
+                        <li><a href="about.html#what">What is the One Piece?</a></li>
+                        <li><a href="about.html#who">Who is the Author?</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="characters.html">Characters</a>
+                    <ul class="sub-menu">
+                        <li><a href="characters.html#StrawHat">Straw Hats Crew</a></li>
+                        <li><a href="characters.html#admirals">Admirals</a></li>
+                        <li><a href="characters.html#others">Other Characters</a></li>
+                        <li><a href="characters.html#more">More</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="faq.html">FAQ + Contact</a>
+                    <ul class="sub-menu">
+                        <li><a href="faq.html#faq">FAQ</a></li>
+                        <li><a href="faq.html#contact">Contact</a></li>
+                    </ul>
+            </ul>
+        </div>
+
+        <div id="StrawHat">
+            <h2>Straw Hats Crew</h2>
+            <p>*Note: Yonko means an Emperor of the Sea, given to the 4 most dangerous pirates by the marines</p>
+            <div id="strawhats1">
+                <div class="rect1">
+                    <img src="img/luffy_gallery.png" alt="Monkey D. Luffy">
+                    <div class="overlay">
+                        <p class="overlay_text"> Captain of the Straw Hats and one of the 4 Yonkos, Monkey D. luffy</p>
+                    </div>
+                </div>
+                <div class="rect1">
+                    <img src="img/zoro_gallery.png" alt="Roronoa Zoro">
+                    <div class="overlay">
+                        <p class="overlay_text"> Swordsman of the Straw Hats, Roronoa Zoro</p>
+                    </div>
+                </div>
+                <div class="rect1">
+                    <img src="img/sanji.png" alt="Vinsmoke Sanji">
+                    <div class="overlay">
+                        <p class="overlay_text"> Cook of the Straw Hats, Vinsmoke 'Black Leg' Sanji</p>
+                    </div>
+                </div>
+            </div> 
+            <div id="strawhats2">
+                <div class="rect1">
+                    <img src="img/franky.png" alt="Franky">
+                    <div class="overlay">
+                        <p class="overlay_text"> Shipwright of the Straw Hats, "Cyborg" Franky </p>
+                    </div>
+                </div>
+                <div class="rect1">
+                    <img src="img/chopper.png" alt="Tony Tony Chopper">
+                    <div class="overlay">
+                        <p class="overlay_text"> Doctor of the Straw Hats, Tony Tony Chopper</p>
+                    </div>
+                </div>
+                <div class="rect1">
+                    <img src="img/nami.png" alt=" 'Cat Burglar' Nami">
+                    <div class="overlay">
+                        <p class="overlay_text"> Navigator of the Straw Hats, "Cat Burglar" Nami</p>
+                    </div>
+                </div>
+            </div>
+            <div id="strawhats3"> 
+                <div class="rect1">
+                    <img src="img/nico-robin.png" alt="Nico Robin">
+                    <div class="overlay">
+                        <p class="overlay_text"> Archaeologist of the Straw Hats, Nico "Devil Child" Robin</p>
+                    </div>
+                </div>
+                <div class="rect1">
+                    <img src="img/usopp.jpg" alt=" 'Sniper King' Usopp">
+                    <div class="overlay">
+                        <p class="overlay_text"> Sniper of the Straw Hats, "Sniper King" Usopp</p>
+                    </div>
+                </div>
+                <div class="rect1">
+                    <img src="img/brook.png" alt="Brook">
+                    <div class="overlay">
+                        <p class="overlay_text"> Musician of the Straw Hats, "Soul King" Brook</p>
+                    </div>
+                </div>
+                <div class="rect1">
+                    <img src="img/jinbe.png" alt="Jinbe">
+                    <div class="overlay">
+                        <p class="overlay_text"> Helmsman of the Straw Hats, "First Son of the Sea" Jimbe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="admirals">
+            <h2>Admirals</h2>
+            <div>
+                <div id="admirals1">
+                    <div class="rect1">
+                        <img src="img/kizaru.png" alt="Kizaru">
+                        <div class="overlay">
+                            <p class="overlay_text"> One of the 3 admirals, Borsalino, AKA Kizaru</p>
+                        </div>
+                    </div>
+                    <div class="rect1">
+                        <img src="img/fujitora.png" alt="fujitora">
+                        <div class="overlay">
+                            <p class="overlay_text"> One of the 3 admirals, Issho, AKA Fujitora</p>
+                        </div>
+                    </div>
+                    <div class="rect1">
+                        <img src="img/amaraki.png" alt="amaraki">
+                        <div class="overlay">
+                            <p class="overlay_text"> One of the 3 admirals, Amaraki, AKA Ryokugyu</p>
+                        </div>
+                    </div>
+                </div> 
+
+            </div>
+
+            <div id="admirals2">
+                <div class="rect1">
+                    <img src="img/garp.png" alt="Garp">
+                    <div class="overlay">
+                        <p class="overlay_text"> Vice Admiral & Grandfather of Luffy, Monkey D. Garp "The Fist"</p>
+                    </div>
+                </div>
+                <div class="rect1">
+                    <img src="img/sengoku.png" alt="sengoku">
+                    <div class="overlay">
+                        <p class="overlay_text"> Former Fleet Admiral of the Marines, Sengoku "The Buddha"</p>
+                    </div>
+                </div>
+                <div class="rect1">
+                    <img src="img/akainu.png" alt="akainu">
+                    <div class="overlay">
+                        <p class="overlay_text"> Former admiral + Current Fleet Admiral of the Marines, Sakazuki, AKA Akainu</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="admirals3">
+                <div class="rect1">
+                    <img src="img/koby.png" alt="Koby">
+                    <div class="overlay">
+                        <p class="overlay_text"> Marine Captain, Koby "The Hero"</p>
+                    </div>
+                </div>
+                <div class="rect1">
+                    <img src="img/smoker.png" alt="smoker">
+                    <div class="overlay">
+                        <p class="overlay_text"> Vice Admiral, Smoker the "White Hunter"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="others">
+            <h2>Other Important Characters</h2>
+            <p>*Note: Yonko means an Emperor of the Sea, given to the 4 most dangerous pirates by the marines</p>
+            <div id="others1">
+                <div class="rect1">
+                    <img src="img/shanks.png" alt="shanks">
+                    <div class="overlay">
+                        <p class="overlay_text">One of the 4 Yonkos, "Red Hair" Shanks</p>
+                    </div>
+                </div>
+                <div class="rect1">
+                    <img src="img/blackbeard.png" alt="blackbeard">
+                    <div class="overlay">
+                        <p class="overlay_text">One of the 4 Yonkos, Blackbeard</p>
+                    </div>
+                </div>
+                <div class="rect1">
+                    <img src="img/buggy.png" alt="buggy">
+                    <div class="overlay">
+                        <p class="overlay_text">One of the 4 Yonkos, Buggy the "Star Clown"</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="others2">
+                <div class="rect1">
+                    <img src="img/aokiji.png" alt="aokiji">
+                    <div class="overlay">
+                        <p class="overlay_text">Former admiral of the marines, current member of Blackbeard's crew, Kuzan, AKA Aokiji</p>
+                    </div>
+                </div>
+                <div class="rect1">
+                    <img src="img/gold-roger.png" alt="gold roger">
+                    <div class="overlay">
+                        <p class="overlay_text">Held the title of Pirate King, Gol D. Roger</p>
+                    </div>
+                </div>
+                <div class="rect1">
+                    <img src="img/trafalgar.png" alt="Trafalgar Law">
+                    <div class="overlay">
+                        <p class="overlay_text">My favorite character, "The Surgeon of Death" Trafalgar D. Law</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="more-info">
+            <h2>For more Characters:</h2>
+            <a href="https://comicvine.gamespot.com/one-piece/4050-21397/characters/" class="button" target="_blank">To learn more about characters in One Piece, Press here</a>
+        </div>
+        
+
+        <div id="footer">
+            <p> &copy; 2024 Daniel Li</p>
+        </div>
+    </body>
+</html>
